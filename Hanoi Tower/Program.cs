@@ -35,27 +35,39 @@ namespace Hanoi_Tower
             object[] b = B.ToArray();
             object[] c = C.ToArray();
 
+            int h = n;
             foreach (object obj in a.Reverse<object>())
             {
-                Console.Write(obj);
+                Console.SetCursorPosition(0, h);
+                Console.WriteLine(obj);
+                h--;
             }
             Console.WriteLine();
+            h = n;
             foreach (object obj in b.Reverse<object>())
             {
-                Console.Write(obj);
+                Console.SetCursorPosition(5, h);
+                Console.WriteLine(obj);
+                h--;
             }
+            h = n;
             Console.WriteLine();
             foreach (object obj in c.Reverse<object>())
             {
-                Console.Write(obj);
+                Console.SetCursorPosition(10, h);
+                Console.WriteLine(obj);
+                h--;
             }
             Console.WriteLine();
+            h = n+1;
+            Console.SetCursorPosition(0, h);
 
             Console.WriteLine();
             Console.WriteLine("Moves:  " + i);
             Console.WriteLine();
-            Console.WriteLine("Minimum moves:  " + (Math.Pow(2,n) - 1));
+            Console.WriteLine("Minimum moves:  " + (Math.Pow(2, n) - 1));
 
+            Thread.Sleep(300);
 
             while (flag)
             {
@@ -155,26 +167,37 @@ namespace Hanoi_Tower
                 b = B.ToArray();
                 c = C.ToArray();
 
+                h = n;
                 foreach (object obj in a.Reverse<object>())
                 {
-                    Console.Write(obj);
+                    Console.SetCursorPosition(0, h);
+                    Console.WriteLine(obj);
+                    h--;
                 }
                 Console.WriteLine();
+                h = n;
                 foreach (object obj in b.Reverse<object>())
                 {
-                    Console.Write(obj);
+                    Console.SetCursorPosition(5, h);
+                    Console.WriteLine(obj);
+                    h--;
                 }
+                h = n;
                 Console.WriteLine();
                 foreach (object obj in c.Reverse<object>())
                 {
-                    Console.Write(obj);
+                    Console.SetCursorPosition(10, h);
+                    Console.WriteLine(obj);
+                    h--;
                 }
+                Console.SetCursorPosition(0, n+1);
                 Console.WriteLine();
 
                 Console.WriteLine();
                 Console.WriteLine("Moves:  " + i);
                 Console.WriteLine();
                 Console.WriteLine("Minimum moves:  " + (Math.Pow(2, n) - 1));
+
 
 
                 if (C.Count == goal.Count())
@@ -194,7 +217,7 @@ namespace Hanoi_Tower
                     }
                     
                 }
-                Thread.Sleep(200);
+                Thread.Sleep(300);
 
 
 
