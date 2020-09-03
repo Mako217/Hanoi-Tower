@@ -67,7 +67,7 @@ namespace Hanoi_Tower
             Console.WriteLine();
             Console.WriteLine("Minimum moves:  " + (Math.Pow(2, n) - 1));
 
-            Thread.Sleep(300);
+            Thread.Sleep(100);
 
             while (flag)
             {
@@ -217,7 +217,7 @@ namespace Hanoi_Tower
                     }
                     
                 }
-                Thread.Sleep(300);
+                Thread.Sleep(100);
 
 
 
