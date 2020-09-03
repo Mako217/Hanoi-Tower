@@ -15,9 +15,7 @@ Każdy bit odpowiada elementowi wieży. Licząc od prawej, pierwszy bit to najmn
 
 Bit którego zmianę zaobserwowaliśmy sygnalizuje, który element wieży należy przenieść. Metoda binarna nigdy nie wskazuje elementu, którego przeniesienie byłoby w tym momencie ruchem nielegalnym. Jeżeli całkowita liczba elementów wieży jest parzysta, należy przenieść element na najbliższy stos po prawej, a jeżeli to niemożliwe to należy go przenieść o dwa stosy w prawo. Jeżeli całkowita liczba elementów jest nieparzysta, należy dany element przenieść na najbliższy stos po lewej, a jeżeli to niemożliwe to o dwa stosy w lewo.
 
-Przykład:<br/>
-<br/>
-
+### Przykład
 ***Stos trzyelementowy***
 
 1<br/>
